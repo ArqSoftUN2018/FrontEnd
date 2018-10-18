@@ -1,0 +1,50 @@
+img{
+    height: 40px;
+    width: 150px;
+}
+.fade
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";   
+}
+
+.close{
+    right: 10px;
+    top: 5px;
+}
+
+/*TextoBienevenidaLogin */
+.title{
+    font-weight: 300;
+    font-family: 18px;
+    font-family: "Lobster", serif;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+
+
+.modal-header{
+    color: white;
+    background-color: #006dcc;   
+    height: 70px;
+    margin-top: 0%;
+    padding: 13px;
+    }
+
+.modal-body{
+    background-color: white;
+    height: 170px;
+    width: 70%;   
+
+}
+.input-group{
+    margin-left: 25%;
+}
+.form-control{
+    border-width: 1px;
+    border-color: gray;    
+    outline: none;
+    
+}

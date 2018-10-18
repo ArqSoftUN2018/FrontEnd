@@ -1,0 +1,70 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="modal fade bd-singup-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-ms">
+            <div class="modal-content text-center">    
+              <div class="modal-header">   
+                <div class="col" style="text-align:center;">
+                  <h2 class="text-center title">!Registrate¡</h2>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position:absolute">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <br>
+              <div class="modal-body text-dark">
+                <label class="lobster">Nombre:</label>
+                <div class="input-group" >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" style="background-color: #ffffff; border-radius: 25px; border:0px;">
+                      <i class="fa fa-user-circle"  aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <input style="border-radius:25px" class="form-control inputa" placeholder="ejemplo@gmail.com" [(ngModel)]="user.nombre" type="email"  required email>                                                             
+                </div>   
+                <label class="lobster">Correo:</label>
+                <div class="input-group" >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" style="background-color: #ffffff; border-radius: 25px; border:0px;">
+                      <i class="fa fa-user-circle"  aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <input style="border-radius:25px" class="form-control inputa" placeholder="ejemplo@gmail.com" [(ngModel)]="user.correo" type="email"  required email>                                                             
+                </div>      
+                <br> 
+                <label class="lobster">Contraseña:</label>       
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" style="background-color: #ffffff; border-radius: 25px; border: 0px;">
+                      <i class="fa fa-unlock-alt"  aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <input style="border-radius:25px" class="form-control" placeholder="********" [(ngModel)]="user.pass" type="password" > 
+                </div>
+                <br> 
+                <label class="lobster">Confirmacion Contraseña:</label>       
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text" style="background-color: #ffffff; border-radius: 25px; border: 0px;">
+                      <i class="fa fa-unlock-alt"  aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <input style="border-radius:25px" class="form-control" placeholder="********" [(ngModel)]="user.pass_confirmation" type="password" > 
+                </div>                                                   
+              </div>                              
+              <div class="text-center">
+                <button class="btn btn-primary lobster" data-dismiss="modal" (click)="singup()">
+                   Registrarse
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+              </div>           
+              <br>
+              <br>                                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

@@ -1,0 +1,16 @@
+span{
+    color: #006dcc;
+}
+
+.header{
+    background-color: whitesmoke;
+}
+.sessionBtn{
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
