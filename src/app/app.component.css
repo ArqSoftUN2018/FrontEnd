@@ -1,9 +1,6 @@
-span{
-    color: #006dcc;
-}
-
 .header{
     background-color: whitesmoke;
+    position: fixed;
 }
 .sessionBtn{
     margin-top:10px;

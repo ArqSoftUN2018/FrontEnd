@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="modal fade bd-editar-tarea-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-ms">
+            <div class="modal-content">    
+              <div class="modal-body text-dark"> 
+                <h3 class="lobster">Tarea</h3> 
+                <div class="input-group" >
+                  <input style="border-radius:25px" class="form-control inputa" [(ngModel)]="tarea.nombre" type="text" >                                                             
+                </div>
+                <h3 class="lobster">Descripcion:</h3> 
+                <div class="input-group" >
+                  <textarea style="border-radius:25px; height: 150px;" class="form-control inputa" placeholder="Descripción" [(ngModel)]="tarea.descripcion" type="text"> </textarea>                                                           
+                </div>
+                <h3 class="lobster">Fecha limite:</h3> 
+                <div class="input-group" >
+                  <input style="border-radius:25px" class="form-control inputa"  [(ngModel)]="tarea.fecha" type="date" >                                                             
+                </div>      
+                <br>
+                <div class="col">
+                  <h3 class="lobster">Archivada</h3> 
+                  <label class="switch">
+                    <input type="checkbox" [checked]="tarea.archivada"/>
+                    <span class="slider round"></span>
+                  </label>        
+                </div>                                                           
+              </div>                              
+              <div class="text-center">
+                <button class="btn btn-primary lobster" data-dismiss="modal" (click)="guardar()">
+                    guardar
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+              </div> 
+              <br>
+              <br>                                 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>

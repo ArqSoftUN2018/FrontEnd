@@ -1,3 +1,18 @@
-<p>
-  lista works!
-</p>
+<div class="col lista" style="width: 320px">
+    <h2 class="lobster">{{lista.nombre}}</h2>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <app-tarea-info [complete]="false" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}" (click)="mostrarTarea(tarea)"></app-tarea-info>
+    <div class="row">
+        <div class="col" >
+            <button type="button" class="btn btn-light lobster" data-toggle="modal" data-target=".bd-agregar-tarea-modal-lg">
+                Agregar tarea
+            </button>
+        </div>
+    </div>
+</div>
+
+<app-agregar-tarea [lista]="lista_id"></app-agregar-tarea>

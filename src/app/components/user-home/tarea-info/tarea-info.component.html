@@ -1,0 +1,12 @@
+<a href="javascript:void(0);"  data-toggle="modal" data-target=".bd-editar-tarea-modal-lg">
+  <div class="card text-white mb-2" style="max-width: 18rem;">
+    <div class="card-header">
+      {{tarea.nombre}} 
+      <span class="float-right">{{tarea.fecha}}</span>
+    </div>
+    <div class="card-body" *ngIf="complete">
+      <p class="card-text">{{tarea.descripcion}}</p>
+    </div>
+  </div>
+</a>
+<app-editar-tarea [tarea]="tarea"></app-editar-tarea>

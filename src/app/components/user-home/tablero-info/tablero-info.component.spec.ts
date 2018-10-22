@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TareaComponent } from './tarea.component';
+import { TableroInfoComponent } from './tablero-info.component';
 
-describe('TareaComponent', () => {
-  let component: TareaComponent;
-  let fixture: ComponentFixture<TareaComponent>;
+describe('TableroInfoComponent', () => {
+  let component: TableroInfoComponent;
+  let fixture: ComponentFixture<TableroInfoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TareaComponent ]
+      declarations: [ TableroInfoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TareaComponent);
+    fixture = TestBed.createComponent(TableroInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

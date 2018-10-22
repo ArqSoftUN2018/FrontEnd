@@ -1,8 +1,31 @@
 <div class="row">
-  <div class="col">
-    <h3 class="lobster">Mis Tableros</h3>
+  <div class="col-sm-3" style="border-right: 1px solid darkgrey">
+    <div class="col" style="width:90%; margin:auto">
+      <h3 class="lobster">Mis Tableros</h3>
+      <div class="row" style="margin-top:50px">
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+        <app-tablero-info  [tablero]="{nombre:'nombre'}"></app-tablero-info>
+      </div>
+    </div>
   </div>
   <div class="col">
+    <div class="col" style="width:90%; margin:auto">
       <h3 class="lobster">Mis Tareas</h3>
+      <div class="row" style="margin:50px">
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+        <app-tarea-info [complete]="true" [tarea]="{nombre:'nombre', descripcion:'esta es una tarea re contra re chingona que solo yo puedo hacer', fecha: '17-09-2018'}"></app-tarea-info>
+      </div>
+    </div>
   </div>
 </div>
